@@ -8,7 +8,7 @@ import DashComments from '../components/DashComments';
 import DashboardComp from '../components/DashboardComp';
 
 export default function Dashboard() {
-  const location = useLocation();
+  const location = useLocation(); 
   const [tab, setTab] = useState('');
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);

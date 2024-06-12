@@ -5,7 +5,7 @@ import {
   deleteComment,
   editComment,
   getPostComments,
-  getcomments,
+  getcomments, 
   likeComment,
 } from '../controllers/comment.controller.js';
 

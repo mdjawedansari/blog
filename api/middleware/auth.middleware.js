@@ -5,7 +5,7 @@ import { errorHandler } from "../utils/ApiError.js";
 import User from "../models/user.model.js";
 
 const authenticatedUser = asyncHandler(async (req, res, next) => {
-    try {
+    try { 
         const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ", "")
         if (!token) {
             return next(errorHandler(401, "unauthorized request"));

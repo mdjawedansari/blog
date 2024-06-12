@@ -2,7 +2,7 @@ import { generateAccessOrRefreshTokens } from "../helper/tokenHelper.js";
 import User from "../models/user.model.js";
 import { errorHandler } from "../utils/error.js";
 
-// Register user
+// Register user 
 export const signup = async (req, res, next) => {
   const { username, email, password } = req.body;
   if ([username, email, password].some((field) => field.trim() === "")) {

@@ -9,7 +9,7 @@ export const verifyToken = async (req, _, next) => {
       req.header("Authorization")?.replace("Bearer ", "");
     if (!token) {
       return next(errorHandler(401, "Unauthorized"));
-    }
+    }  
     const decodedToken = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
 
     const user = await User.findById(decodedToken?._id).select(

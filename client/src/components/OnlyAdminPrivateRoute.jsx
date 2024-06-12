@@ -9,3 +9,4 @@ export default function OnlyAdminPrivateRoute() {
     <Navigate to='/sign-in' />
   );
 }
+ 

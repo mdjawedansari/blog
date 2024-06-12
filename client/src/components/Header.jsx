@@ -7,7 +7,7 @@ import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
 
-export default function Header() {
+export default function Header() { 
   const path = useLocation().pathname;
   const location = useLocation();
   const navigate = useNavigate();

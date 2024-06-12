@@ -7,7 +7,7 @@ import {toast} from "react-hot-toast"
 import { signInSuccess } from '../redux/user/userSlice';
 import { useNavigate } from 'react-router-dom';
 
-export default function OAuth() {
+export default function OAuth() { 
     const auth = getAuth(app)
     const dispatch = useDispatch()
     const navigate = useNavigate()
